@@ -1,0 +1,34 @@
+div {
+    text-align: center;
+
+}
+div h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: red;
+
+}
+.grid {
+    display: grid;
+    width: 500px;
+    grid-template: 100px 200px 100px / repeat(2, 100px);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .a {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  .b {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .c {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .d {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+  }
+  
